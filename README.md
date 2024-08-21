@@ -14,6 +14,8 @@
 - **Rangkaian Seri dan Paralel**: Memahami pengaturan dasar dalam menghubungkan komponen.
 - **Pembagi Tegangan**: Teknik untuk mendapatkan tegangan tertentu dari sumber tegangan tetap.
 - **Penguat Operasional**: Prinsip kerja penguat sinyal analog.
+- **Filter RC dan EMI**: Memahami dan menggunakan filter RC untuk menghilangkan noise dari sinyal, dan EMI filter untuk melindungi perangkat dari interferensi elektromagnetik.
+- **Surge Arrester**: Memahami penggunaan surge arrester untuk melindungi perangkat elektronik dari lonjakan tegangan yang berbahaya.
 
 #### Simulasi Rangkaian
 - **Software Simulasi**: Menggunakan alat simulasi untuk memvisualisasikan dan menguji rangkaian elektronik.
@@ -52,6 +54,13 @@
 #### Protokol Komunikasi
 - **Komunikasi Antar Perangkat**: Menggunakan protokol seperti I2C, SPI, dan UART.
 - **Bus Kontrol**: Menggunakan CAN Bus untuk komunikasi antara beberapa perangkat.
+- **Protokol MQTT**: Menggunakan MQTT untuk komunikasi lightweight antar perangkat IoT.
+- **Protokol HTTP/HTTPS**: Menggunakan HTTP/HTTPS untuk komunikasi berbasis web.
+- **Protokol CoAP**: Menggunakan CoAP untuk komunikasi efisien di lingkungan constrained.
+- **Protokol LoRaWAN**: Memanfaatkan LoRaWAN untuk komunikasi jarak jauh dengan daya rendah.
+- **Protokol Bluetooth**: Menggunakan Bluetooth untuk komunikasi jarak pendek antar perangkat.
+- **Protokol Zigbee**: Menggunakan Zigbee untuk komunikasi nirkabel pada jaringan mesh.
+- **Modul GSM**: Memanfaatkan modul GSM untuk komunikasi seluler dalam perangkat IoT yang memerlukan konektivitas jarak jauh.
 
 #### Keamanan IoT
 - **Enkripsi Komunikasi**: Melindungi data dalam perjalanan menggunakan SSL/TLS.
@@ -142,35 +151,93 @@
 ### 4. Platform IoT dan Manajemen Data
 
 #### Platform IoT
-- **Manajemen Perangkat**: Menggunakan platform IoT untuk mengelola perangkat dan data.
-- **Konektivitas dan Pengolahan Data**: Menghubungkan perangkat dan mengelola data di platform IoT.
-
+- **ThingsBoard**: Platform open-source yang menyediakan fitur-fitur seperti manajemen perangkat, data visualization, dan rule engine.
+- **Blynk**: Platform yang memungkinkan pengembangan aplikasi mobile untuk mengendalikan perangkat IoT.
+- **Node-RED**: Alat pengembangan berbasis flow untuk menghubungkan perangkat keras, API, dan layanan online.
+- **MING Stack**: Menggunakan MongoDB, InfluxDB, Node.js, dan Grafana untuk membangun solusi IoT end-to-end.
+  
 #### Manajemen Data
 - **Pengambilan dan Penyimpanan Data**: Mengelola aliran data dari perangkat IoT.
 - **Pemrosesan Data**: Mengolah data yang diterima dari perangkat untuk analisis lebih lanjut.
 
 #### Keamanan Data
 - **Enkripsi Data**: Melindungi data saat transit dan saat disimpan.
-- **Otentikasi dan Otorisasi**: Menerapkan mekanisme untuk memastikan bahwa hanya pengguna yang berwenang yang dapat mengakses data dan perangkat.
+- **Otentikasi dan Otorisasi**: Memastikan hanya pengguna yang sah yang dapat mengakses data.
 
-### 5. Pengujian dan Implementasi
+### 5. Deploy dan Monitoring
 
-#### Pengujian
-- **Pengujian Unit dan Integrasi**: Menguji komponen individu dan integrasi antara komponen.
-- **Pengujian End-to-End**: Memastikan seluruh sistem berfungsi dengan baik dari awal hingga akhir.
+#### Deploy Aplikasi
+- **Platform Cloud**: Menggunakan cloud services seperti AWS, Azure, atau Google Cloud untuk deploy aplikasi.
+- **Containerization**: Menggunakan Docker untuk mendistribusikan aplikasi IoT.
 
-#### Deploy dan Monitoring
-- **Deploy ke Cloud**: Melakukan deploy aplikasi ke layanan cloud.
-- **Monitoring dan Logging**: Memantau performa aplikasi dan mencatat log untuk analisis.
+#### Monitoring
+- **Pemantauan Kinerja**: Menggunakan alat seperti Grafana dan Prometheus untuk memantau kesehatan aplikasi.
+- **Logging**: Mengimplementasikan logging untuk menganalisis aktivitas aplikasi.
 
-### 6. Maintenance dan Pengembangan Lanjutan
+### 6. Pemeliharaan dan Pengembangan Lanjutan
 
-#### Maintenance
-- **Perbaikan Bug dan Pembaruan**: Menjaga aplikasi tetap up-to-date dan bebas bug.
-- **Patch Keamanan**: Memastikan aplikasi terlindungi dari ancaman keamanan.
+#### Pemeliharaan
+- **Bug Fixing**: Mengidentifikasi dan memperbaiki bug yang muncul.
+- **Keamanan Berkelanjutan**: Melakukan pembaruan keamanan secara berkala.
 
 #### Pengembangan Lanjutan
-- **Integrasi dengan AI**: Menggabungkan AI untuk analisis data IoT.
-- **Edge Computing**: Pemrosesan data langsung pada perangkat, bukan di cloud.
-- **Analitik Lanjutan**: Menggunakan teknik analitik canggih untuk wawasan yang lebih mendalam.
+- **Optimasi Kinerja**: Meningkatkan kinerja aplikasi berdasarkan feedback pengguna.
+- **Fitur Baru**: Menambahkan fitur baru sesuai dengan kebutuhan pengguna.
+
+---
+
+## IoT Architect 🧑‍💻
+
+### 1. Dasar-dasar Arsitektur IoT
+
+#### Arsitektur Sistem
+- **Komponen Utama IoT**: Memahami elemen-elemen utama dari sistem IoT, seperti perangkat, jaringan, dan platform.
+  
+#### Arsitektur Jaringan
+- **Topologi Jaringan**: Memahami berbagai topologi jaringan yang umum digunakan dalam IoT.
+- **Protokol Jaringan**: Memahami berbagai protokol komunikasi yang digunakan dalam IoT.
+
+### 2. Desain dan Pengembangan Arsitektur IoT
+
+#### Desain Sistem
+- **Pemilihan Komponen**: Memilih perangkat keras dan perangkat lunak yang tepat untuk membangun sistem IoT.
+- **Desain Skala**: Merancang sistem yang dapat diskalakan sesuai dengan pertumbuhan perangkat dan data.
+
+#### Pengembangan dan Implementasi
+- **Integrasi Komponen**: Mengintegrasikan berbagai komponen IoT ke dalam sistem yang solid.
+- **Implementasi Platform**: Memilih dan mengimplementasikan platform IoT yang sesuai dengan kebutuhan proyek.
+
+### 3. Industrial IoT (IIoT)
+
+#### Pengembangan IIoT
+- **Perangkat IIoT**: Menggunakan perangkat IIoT khusus yang didesain untuk lingkungan industri.
+- **Protokol Industri**: Menguasai protokol industri seperti OPC-UA, Modbus, dan Profinet.
+- **Integrasi SCADA**: Mengintegrasikan perangkat IIoT dengan sistem SCADA untuk kontrol dan pengawasan.
+  
+#### Manajemen Data di IIoT
+- **Big Data dan Analytics**: Mengelola dan menganalisis data besar dari perangkat industri untuk meningkatkan efisiensi.
+- **Keamanan IIoT**: Implementasi keamanan spesifik untuk lingkungan industri yang melibatkan sistem kritis.
+
+#### Pengembangan Lanjutan
+- **Predictive Maintenance**: Menggunakan data dari perangkat IIoT untuk memprediksi kapan mesin memerlukan pemeliharaan.
+- **Otomasi Industri**: Mengembangkan solusi untuk mengotomatisasi proses industri menggunakan IoT.
+
+### 4. Manajemen Proyek IoT
+
+#### Manajemen Proyek
+- **Perencanaan dan Pengelolaan**: Mengelola seluruh siklus hidup proyek IoT dari perencanaan hingga pelaksanaan.
+- **Agile dan DevOps**: Menerapkan metodologi Agile dan DevOps untuk pengembangan dan pengelolaan proyek.
+
+#### Manajemen Risiko
+- **Identifikasi Risiko**: Mengidentifikasi potensi risiko yang dapat mempengaruhi proyek IoT.
+- **Mitigasi Risiko**: Mengembangkan strategi untuk memitigasi risiko yang teridentifikasi.
+
+---
+
+## Sumber Daya Tambahan
+
+- **Belajar Lebih Lanjut**: Daftar kursus, buku, dan komunitas untuk terus mengembangkan keterampilan IoT.
+- **Sertifikasi**: Panduan sertifikasi yang diakui di industri IoT.
+
+---
 
