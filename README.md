@@ -19,6 +19,8 @@
 
 #### Simulasi Rangkaian
 - **Software Simulasi**: Menggunakan alat simulasi untuk memvisualisasikan dan menguji rangkaian elektronik.
+  - **Tinkercad Circuits**: Platform berbasis web yang memungkinkan simulasi rangkaian elektronik secara interaktif dan mudah digunakan. Anda dapat mencoba di [Tinkercad Circuits](https://www.tinkercad.com/circuits).
+  - **SimulIDE**: Software desktop untuk simulasi rangkaian elektronik secara real-time, cocok untuk pengujian dan pembelajaran. Coba di [SimulIDE](https://simulide.com/p/).
 
 #### Bahasa Pemrograman
 - **Bahasa Pemrograman Dasar**: Menguasai bahasa seperti C/C++ untuk pemrograman mikrokontroler.
